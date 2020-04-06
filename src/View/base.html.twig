@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+    {% block stylesheet %}
+       {#<-- appel éventuel du CSS Bootstrap -->#}
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    {% endblock %}
+</head>
+
+<body>
+{% block content %}
+ Affichage de la variable robot {{ name }}
+
+{% endblock %}
+{% block javascript %}
+
+{# <-- appel éventuel du JS Jquery et Bootstrap --> #}
+
+{% endblock %}
+</body>
+</html>

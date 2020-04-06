@@ -1,0 +1,12 @@
+{
+    "name": "gca/21_wcs_twig_challenge",
+    "authors": [
+        {
+            "name": "Guillaume CAVALIE",
+            "email": "actix2013@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0"
+    }
+}
