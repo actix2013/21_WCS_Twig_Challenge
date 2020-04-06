@@ -1,0 +1,32 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    show products
+{% endblock %}
+{%  block content %}
+<div class="container">
+
+    <div class="row justify-content-center">
+
+
+        {% for product in products %}
+        <div class="row-4 mx-auto ml-auto mr-auto mb-2 mt-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Une ligne de description  pour product 1. .</p>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+
+
+
+
+</div>
+
+{% endblock %}
